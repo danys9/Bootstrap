@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Prueba de CSS Propios</title>
 
+    <!--Los scrpts a generar se deben colocar DEBAJO de la librería de javascript de jQuery-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
     <!-- Bootstrap -->
+    <!--Hoja de estilo de Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Nuestra hoja de estilo (propia)-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Es importante el orden porque lo va interpretando como va apareciendo
+    el estilo del título sí se sobreescribe dependiendo del orden en el que se 
+    adjunten o manden a llamar las CSS-->
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,6 +31,8 @@
     <![endif]-->
   </head>
   <body>
+    <!--Aquí se están implementando textos con estilos propios, se usan 2 hojas de estilo, una con las 
+    fuentes propias y la de bootstrap-->
     <h1>¡Hola Mundo!</h1>
     <p class="may">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a consectetur sapien. Nulla quis facilisis velit, gravida dictum lorem. Donec ultrices sem a nulla sollicitudin auctor. Pellentesque dapibus, libero eget mollis auctor, ex diam faucibus sapien, ultricies imperdiet felis lectus a lacus. Duis eget tellus scelerisque, pellentesque dui sed, ultrices est. Aliquam ultrices, lectus id eleifend tincidunt, orci felis condimentum eros, vitae imperdiet tellus turpis vestibulum velit. Morbi blandit, augue nec ornare pellentesque, felis ante porta lorem, a varius enim augue gravida lacus. Suspendisse pulvinar ut nulla quis ultrices. Duis euismod purus vel nunc consequat, nec feugiat tellus interdum. Sed non dui ac turpis scelerisque placerat. Aenean feugiat, elit eget pellentesque tempus, sapien magna consequat tellus, porta aliquet augue risus non mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sapien nunc, dictum ut aliquet sed, tempus id nisi. Duis ullamcorper commodo turpis, ac varius risus convallis sed. Donec ultricies vulputate aliquet. Donec nunc urna, eleifend ut arcu sed, pulvinar vestibulum eros.
@@ -28,10 +43,7 @@
     <p class="v">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a consectetur sapien. Nulla quis facilisis velit, gravida dictum lorem. Donec ultrices sem a nulla sollicitudin auctor. Pellentesque dapibus, libero eget mollis auctor, ex diam faucibus sapien, ultricies imperdiet felis lectus a lacus. Duis eget tellus scelerisque, pellentesque dui sed, ultrices est. Aliquam ultrices, lectus id eleifend tincidunt, orci felis condimentum eros, vitae imperdiet tellus turpis vestibulum velit. Morbi blandit, augue nec ornare pellentesque, felis ante porta lorem, a varius enim augue gravida lacus. Suspendisse pulvinar ut nulla quis ultrices. Duis euismod purus vel nunc consequat, nec feugiat tellus interdum. Sed non dui ac turpis scelerisque placerat. Aenean feugiat, elit eget pellentesque tempus, sapien magna consequat tellus, porta aliquet augue risus non mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin sapien nunc, dictum ut aliquet sed, tempus id nisi. Duis ullamcorper commodo turpis, ac varius risus convallis sed. Donec ultricies vulputate aliquet. Donec nunc urna, eleifend ut arcu sed, pulvinar vestibulum eros.
     </p>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
+   
   </body>
 </html>

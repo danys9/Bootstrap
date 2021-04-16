@@ -21,24 +21,59 @@
     <h1>Introducción al sistema de rejilla</h1>
 
     <div class="container">
+      <!--Se puede meter el título en una rejilla-->
+
+      <!--Se define una fila o renglón-->
       <div class="row">
-        <div class="col-xs-6 col-sm-2 col-md-4 col-lg-3 columna">1 de 4</div>
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-3 columna">2 de 4</div>
-        <div class="col-xs-6 col-sm-2 col-md-5 col-lg-3 columna">3 de 4</div>
-        <div class="col-xs-6 col-sm-4 col-md-1 col-lg-3 columna">4 de 4</div>
+
+        <!--Se definen columnas pertenecientes al regnlón-->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12 columna text-center">
+          <!--Va a ocupar el tamaño de 12 espacios o columnas en una resolución grande, ocupa el
+          espacio de 6 en una resolución pequeña, un espacio de 4 en una resolución mediana, después
+          se puede aplicar alguna función de bootstrap como text-center para centrarlo, etc-->
+            <h1>Introducción al sistema de rejilla</h1>
+        
+        </div>
+        
       </div>
+
+
       <div class="row">
-        <div class="col-xs-2 col-lg-6 columna">1 de 2</div>
-        <div class="col-xs-5 columna">1 de 5</div>
-        <div class="col-xs-5 columna">1 de 5</div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 columna"> Row (1 de 4) </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 columna"> Row (2 de 4) </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 columna"> Row (3 de 4) </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 columna"> Row (4 de 4) </div>
+        <!--Con el col-lg se dice la longitud de la columna, si me paso de los 12 permitidos,
+        por ejemplo pongo las primeras en 3 y la última en 4, me paso del máximo del renglón
+        y la última columna quedaría abajo. En lo de xs indica que con una resolución grande 
+        qué tanto mide o se va a mostrar de la columna (tamaño)-->
       </div>
+
       <div class="row">
-        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">1 de 1</div>
-        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">1 de 1</div>
-        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">1 de 1</div>
-        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">1 de 1</div>
-        <div class="col-xs-1 col-xs-pull-4 col-lg-2 col-lg-push-0 columna">last</div>
+
+        <div class="col-xs-2  col-lg-6 columna"> 1 de 2 </div>
+        <div class="col-xs-5  columna"> 1 de 5 </div>
+        <div class="col-xs-5  columna"> 1 de 5 </div>
+        <!--Si yo sólo especifico una medida, esa misma medida se toma para las columnas restantes-->
+
       </div>
+
+      <div class="row">
+        <!--Cuando se tenga una columna pequeña "empuja" esta columna 6 lugares a la derecha (push)
+        y por el contrario, al tener una resolución x se podría decir que "jale" la columna tantos 
+        lugares a la izquierda (pull)
+        Con el offset puedo empujar todos los elementos (los acomoda respecto a la rejilla),
+        push y pull sólo empujan un elemento -->
+        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">col 1 de 1</div>
+        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">col 2 de 1</div>
+        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">col 3 de 1</div>
+        <div class="col-xs-1 col-xs-push-6 col-lg-2 col-lg-push-0 columna">col 4 de 1</div>
+        <div class="col-xs-1 col-xs-pull-4 col-lg-2 col-lg-push-0 columna hidden-md">last col</div>
+        <!--Hacer o no visibles los elementos dependiendo del tipo de resolución. En una resolución
+        mediana se oculta la última columna-->
+      </div>
+
+
       <div class="row">
         <div class="col-xs-1 columna">1 de 1</div>
         <div class="col-xs-1 col-xs-offset-4 columna">1 de 1</div>
