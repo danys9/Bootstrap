@@ -7,6 +7,9 @@
     <title>Imágenes</title>
 
     <!-- Bootstrap -->
+    <!--Se pueden tener imágenes en carruseles, en fondos de pantalla, en encabezados en backgrounds, en íconos-->
+
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,10 +27,16 @@
           <div class="col-xs-12">          
            
           <h4>Uso de imágenes</h4>
-          <img class="img-responsive" src="img/test_mini.png" alt="test">
+
+          <!--La clase img-responsive, ayuda a escalar las imágenes para las diferentes resoluciones-->
+          <img class="img-responsive text-center" src="img/test_mini.png" alt="test"> 
+          <!--Se pueden poner textos alineados a la derecha, izq o centro como un texto-->
 
           <h4>Estilos especiales</h4>
-          <img src="img/test_square.png" class="img-rounded" alt="test">
+          <!--Para que estas imágenes se hagan responsivas, en el css podríamos poner que cuando se hagan de ciertos pixeles, cambien su tamaño
+          o decir que cuando la media query sea de "x" resolución, se muestren imágenes diferentes o que su comportamiento cambie.
+          O agregar la clase que ya nos da bootstrap y poner que sea responsiva (img-responsive), jamás podré pasarme del 100% de la resolución-->
+          <img src="img/test_square.png" class="img-rounded img-responsive" alt="test">
           <img src="img/test_square.png" class="img-circle" alt="test">
           <img src="img/test_square.png" class="img-thumbnail" alt="test">
 

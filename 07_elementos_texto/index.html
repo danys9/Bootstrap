@@ -7,8 +7,11 @@
     <title>Elementos de texto: titulares, párrafos, alineación y otros</title>
 
     <!-- Bootstrap -->
+    <!--Aquí se encuentra el enlace a la hoja de estilo correspondiente-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!--Aquí se ocupa una fuente de Ubuntu que se encuentra en el API de google, 400 es la fuente regular, 500 es bold y 700 negrita más fuerte-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+  
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,6 +21,13 @@
   </head>
   <body>
     
+    <!--Acomodar elementos en una rejilla ¿Cuántos espacios de la rejilla ocupará o cómo se verán o acomodarán en la pantalla?
+    Si sólo se especifica la resolución más pequeña, todas las resoluciones tomarán esa organización de componentes-->
+    <!--Push jala elementos de manera individual (de la rejilla) despúes de posicionarlo, pull lo empuja al elemento de 
+    forma individual con el class que necesite off set empuja o jala a todos los elementos. 
+    Diseño responsivo NO es escalar, es mostrar los elementos que se requieran para la resolución que se requiera-->
+
+
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -30,13 +40,20 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, fuga dolorum molestias ex vitae adipisci rerum tempora est error reprehenderit excepturi repellendus facere iusto repellat atque. Eos, porro ad adipisci.</p>
           <h4>Titular <small>con texto secundario</small></h4>
           <p class="lead">Párrafo destacado con <code>.lead</code>: <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+
+          <!--Blockquote son bloques para citas-->
           <blockquote class="blockquote-reverse">
             <p>O texto destacado con blockquote.</p>
             <footer>Con efectos adicionales como un footer o alineación invertida con <code>.blockquote-reverse</code>.</footer>
           </blockquote>
+
+          <!--Para alinear los elementos con bootstrap se utilizan tales funciones "text left, text right, text center..."-->
           <p class="text-left">Alineamiento a la izquierda con <code>.text-left</code>.</p>
           <p class="text-right">Alineamiento a la derecha con <code>.text-right</code></p>
           <p class="text-center">Alineamiento centrado con <code>.text-center</code></p>
+          
+          <!--El texto justificado hace que todo esté uniforme, alineado hacia los costados, se expande para que no queden huecos del lado derecho ni del
+          lado izquierdo. NO es bueno abusar del texto justificado porque se cansa la vista-->
           <p class="text-justify">E incluso alineamiento justificado mediante la clase <code>.text-justify</code> que requiere de textos más extensos para poder apreciarse correctamente su efecto sobre un párrafo.</p>          
           <p>Formato propio para direcciones:</p>
           <address> <strong>Daniel Velázquez</strong><br>

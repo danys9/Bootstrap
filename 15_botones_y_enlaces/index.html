@@ -25,7 +25,16 @@
            
           <h4>Uso de botones</h4>
           <button class="btn btn-danger btn-lg">Botón "button"</button>
-          <a class="btn btn-default" href="#">Botón "a"</a>
+          <!--También existe el btn-warning -->
+          <!--La clase del btn define toda la estructura básica del botón, warning agrega elementos gráficos como el color-->
+          <!--Se tienen clases genéricas que se sobreescriben para agregar otras clases que cambian el color de los 
+          botones, o que modifican su comportamiento-->
+
+          <a class="btn btn-warning" href="#">Botón "a"</a> <!--Se les pueden agregar clases a ambos para que se comporten como si fueran la misma
+          a pesar de que las anclas y botones son elementos distintos-->
+          <!--Las anclas también funcionan como enlaces para navegar hacia otras partes de la página. -->
+          <!--En las hojas de estilo se pueden definir nuevas clases de botones (no los que tiene bootstrap por default, o se pueden
+            sobreescribir en otra hoja de estilo)-->
           <input type="button" class="btn btn-info btn-sm" value="Botón input">
           <input type="submit" class="btn btn-primary btn-xs" value="Botón submit">
           </div>
